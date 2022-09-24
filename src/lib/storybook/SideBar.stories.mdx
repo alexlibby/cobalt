@@ -1,0 +1,30 @@
+import SideBar from "../SideBar/SideBar.svelte";
+import Hamburger from "../SideBar/Hamburger.svelte";
+import SideBarDocs from "./SideBarDocs.mdx";
+import { Meta, Story } from '@storybook/addon-docs';
+
+<Meta
+  title="Cobalt UI Library/Navigation Components/SideBar"
+  component={SideBar}
+  subcomponent={Hamburger}
+  parameters={{ page: null }}
+/>
+
+export const Template = (args) => ({
+  Component: SideBar,
+  subcomponent: Hamburger,
+  props: args,
+});
+
+<Story
+  name="Default"
+    args = {{
+      open: false
+    }}
+  parameters={{
+    docs: {
+      page: SideBarDocs,
+    },
+  }}>
+  {Template.bind({})}
+</Story>

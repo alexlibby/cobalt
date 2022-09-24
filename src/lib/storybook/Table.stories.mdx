@@ -1,0 +1,44 @@
+import Table from "../ImageGrid/Table.svelte";
+import TableDocs from "./TableDocs.mdx";
+import { Meta, Story } from '@storybook/addon-docs';
+
+<Meta 
+  title="Cobalt UI Library/Grid Components/Image Grid"
+  component={Table}
+  parameters={{page: null}}
+/>
+
+export const Template = (args) => ({
+  Component: Table,
+  props: args,
+});
+
+<Story name="Default" 
+  args={{ 
+    columnCount: "1",
+    rowCount: "4", 
+    border: "none",
+    placeholderImages: "false",
+    itemCount: "12",
+  }}
+  parameters={{
+    docs: {
+      page: TableDocs
+    },
+	}}
+/>
+
+<Story name="Placeholder Images" 
+  args={{ 
+    columnCount: "1",
+    rowCount: "4", 
+    border: "none",
+    placeholderImages: "true",
+    itemCount: "12",
+  }}
+  parameters={{
+    docs: {
+      page: TableDocs
+    },
+	}}
+/>

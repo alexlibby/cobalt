@@ -1,0 +1,45 @@
+import Slider from "../Slider/Slider.svelte";
+import SliderDocs from "./SliderDocs.mdx";
+import { Meta, Story } from '@storybook/addon-docs';
+
+<Meta
+	title="Cobalt UI Library/Basic Components/Slider"
+	component={Slider}
+	parameters={{ page: null }}
+/>
+
+export const Template = (args) => ({
+  Component: Slider,
+  props: args,
+});
+
+<Story
+	name="Default"
+	args={{
+		val: 1,
+		min: 0,
+		max: 100,
+		step: 10,
+	}}
+	parameters={{
+		docs: {
+			page: SliderDocs,
+		},
+	}}
+/>
+
+<Story
+	name="Disabled"
+	args={{
+		val: 1,
+		min: 0,
+		max: 100,
+		step: 10,
+		disabled: true,
+	}}
+	parameters={{
+		docs: {
+			page: SliderDocs,
+		},
+	}}
+/>

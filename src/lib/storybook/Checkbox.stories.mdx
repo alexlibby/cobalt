@@ -1,0 +1,59 @@
+import Checkbox from '../Checkbox/Checkbox.svelte';
+import CheckboxDocs from './CheckboxDocs.mdx';
+import { Meta, Story } from '@storybook/addon-docs';
+import { BADGE } from '@geometricpanda/storybook-addon-badges';
+
+<Meta
+	title="Cobalt UI Library/Basic Components/Checkbox"
+	component={Checkbox}
+	parameters={{ page: null }}
+/>
+
+export const Template = (args) => ({
+  Component: Checkbox,
+  props: args,
+});
+
+<Story
+	name="Default"
+	args={{
+		checked: true,
+		onChange: () => alert('this is a text field')
+	}}
+	parameters={{
+		docs: {
+			page: CheckboxDocs
+		},
+		badges: [BADGE.BETA]		
+	}}>
+	{Template.bind({})}
+</Story>
+
+<Story
+	name="NoLabel"
+	args={{
+		label: '',
+		checked: true,
+		onChange: () => alert('this is a text field')
+	}}
+	parameters={{
+		docs: {
+			page: CheckboxDocs
+		}
+	}}>
+	{Template.bind({})}
+</Story>
+
+<Story
+	name="Disabled"
+	args={{
+		checked: true,
+		disabled: true
+	}}
+	parameters={{
+		docs: {
+			page: CheckboxDocs
+		}
+	}}>
+	{Template.bind({})}
+</Story>

@@ -1,0 +1,59 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs';
+import Input from "../Input/Input.svelte";
+
+<Meta title="Cobalt UI Library/Basic Components/Input" component={Input} />
+
+# Input
+
+Input is the primary component. It has four possible states.
+
+- [Default](#default)
+- [Email](#email)
+- [No Label](#no-label)
+- [Disabled](#disabled)
+
+<a id="default" />
+
+## Default
+
+This is the default version of the Input component.
+
+<Canvas>
+  <Story id="cobalt-ui-library-basic-components-input--default-story" />
+</Canvas>
+
+<a id="email" />
+
+## Email
+
+This variant formats the Input as an email-driven field.
+
+<Canvas>
+  <Story id="cobalt-ui-library-basic-components-input--email" />
+</Canvas>
+
+<a id="no-label" />
+
+## No Label
+
+This variant hides the label normally seen with the Input component.
+
+<Canvas>
+  <Story id="cobalt-ui-library-basic-components-input--no-label" />
+</Canvas>
+
+<a id="disabled" />
+
+## Disabled Input
+
+This variant disables the Input component.
+
+<Canvas>
+  <Story id="cobalt-ui-library-basic-components-input--disabled" />
+</Canvas>
+
+## Properties of component
+
+Below is a list of arguments available for this component:
+
+<ArgsTable of={Input} />

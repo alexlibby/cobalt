@@ -1,0 +1,48 @@
+import Alert from '../Alert/Alert.svelte';
+import AlertDocs from './AlertDocs.mdx';
+import { Meta, Story } from '@storybook/addon-docs';
+
+<Meta
+	title="Cobalt UI Library/Notification Components/Alert"
+	component={Alert}
+	parameters={{ page: null }}
+/>
+
+export const Template = (args) => ({
+  Component: Alert,
+  props: args,
+});
+
+<Story
+	name="Info"
+	args={{		
+		show: true,
+		description: "An info description",
+		title: "Simple Info",
+		icon: "true",
+		type: "info",
+	}}
+	parameters={{
+		docs: {
+			page: AlertDocs
+		}
+	}}>
+	{Template.bind({})}
+</Story>
+
+<Story
+	name="Warning"
+	args={{
+		show: true,
+		description: "An warning message",
+		title: "Simple warning",
+		icon: "true",
+		type: "warn",
+	}}
+	parameters={{
+		docs: {
+			page: AlertDocs
+		}
+	}}>
+	{Template.bind({})}
+</Story>
