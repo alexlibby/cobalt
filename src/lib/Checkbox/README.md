@@ -8,3 +8,5 @@ This is a test release of the Checkbox component from my upcoming book, Creating
 To install, enter this command in a Node.js terminal session:
 
 `npm install @alexlibby/checkbox`
+
+License: MIT
