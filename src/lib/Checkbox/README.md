@@ -8,6 +8,7 @@ This is a test release of the Checkbox component from my upcoming book, Creating
 To install, run this command: `npm install @alexlibby/checkbox`
 
 Screenshot of the default variant:
+
 ![image](https://user-images.githubusercontent.com/16504949/193410051-bd6ae5ab-2378-42b3-b47f-d7fb240ebc34.png)
 
 
