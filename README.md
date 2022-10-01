@@ -27,8 +27,8 @@ All components (except SideBar) are available via Storybook, hosted on Netlify -
 ## Installation
 To install this library, do the following:
 
-- In a Node.js terminal session, run this command to clone the library:
-`git clone https://github.com/alexlibby/cobalt.git`
+- In a Node.js terminal session, run this command to clone the library: 
+  `git clone https://github.com/alexlibby/cobalt.git`
 - At the prompt, enter `npm install` to install all dependencies for the library.
 
 ## Roadmap / To Do:
