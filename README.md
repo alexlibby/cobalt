@@ -31,6 +31,14 @@ To install this library, do the following:
   `git clone https://github.com/alexlibby/cobalt.git`
 - At the prompt, enter `npm install` to install all dependencies for the library.
 
+## Support
+If you have any issues with installing, or using the library, please log an issue.
+
+I would ask though that you respect the following guidelines:
+- Please provide a test case in a CodeSandbox or Codepen that *only* uses the component - I am not able to provide support if the issue is coming from outside of the Cobalt library.
+- I will endeavour to help, but bear with me as this is not my primary role, so will respond when I can!
+
+
 ## Roadmap / To Do:
 - Add a Radiobutton component
 - Refactor SideBar to work better in Storybook, and deprecate/remove external demo
