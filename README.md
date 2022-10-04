@@ -31,17 +31,35 @@ To install this library, do the following:
   `git clone https://github.com/alexlibby/cobalt.git`
 - At the prompt, enter `npm install` to install all dependencies for the library.
 
-## Support
-If you have any issues with installing, or using the library, please log an issue.
-
-I would ask though that you respect the following guidelines:
-- Please provide a test case in a CodeSandbox or Codepen that *only* uses the component - I am not able to provide support if the issue is coming from outside of the Cobalt library.
-- I will endeavour to help, but bear with me as this is not my primary role, so will respond when I can!
-
-
 ## Roadmap / To Do:
-- Add a Radiobutton component
+Below is a summary of future changes that I'm looking to implement in the library - I will also include individual roadmaps for each component in separate files.
+
+Key features:
+
+- Finish the Radiobutton component
+- Consider conversion to TypeScript
 - Refactor SideBar to work better in Storybook, and deprecate/remove external demo
 - Improve tests
 - Add test coverage
 - Add more demos for frameworks other than Svelte
+- Expose more of the existing properties
+
+Full details available on [the roadmap page](https://github.com/alexlibby/cobalt/blob/main/roadmap.md).
+
+Roadmaps for each component:
+
+- Checkbox: [Roadmap](https://github.com/alexlibby/cobalt/blob/main/src/lib/Checkbox/roadmap.md)
+- Accordion: TBA
+- Alert: TBA
+- Breadcrumbs: TBA
+- Dialog: TBA
+- ImageGrid: TBA
+- Input: TBA
+- SelectBox: TBA
+- Slider: TBA
+- Spinner: TBA
+- Tabs: TBA
+- Tooltip: TBA
+
+- SideBar: this will be added once the component is moved into Storybook
+

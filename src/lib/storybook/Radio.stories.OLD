@@ -1,0 +1,29 @@
+import RadioButton from "../RadioButton/RadioButton.svelte"
+import RadioButtonGroup from "../RadioButton/RadioButtonGroup.svelte"
+import RadioButtonDocs from "./RadioButtonDocs.mdx";
+import { Meta, Story } from '@storybook/addon-docs';
+
+<Meta 
+  title="Cobalt UI Library/Action Components 2/RadioButton"
+  component={RadioButtonGroup}
+  parameters={{page: null}}
+/>
+
+export const Template = (args) => ({
+  Component: RadioButtonGroup,
+  props: args,
+});
+
+<Story name="Default" 
+  parameters={{
+    docs: {
+      page: RadioButtonDocs
+    },
+	}}
+>
+  <RadioButtonGroup label="RadioButton group legend">
+    <RadioButton label="Label 1" value="1" />
+    <RadioButton label="Label 2" value="2" />
+    <RadioButton label="Label 3" value="3" />
+  </RadioButtonGroup>
+</Story>

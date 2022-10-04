@@ -1,37 +1,49 @@
 import RadioButton from "../RadioButton/RadioButton.svelte";
+import { action } from "@storybook/addon-actions";
+
+const actionsData = {
+  click: action("click"),
+  blur: action("blur"),
+  change: action("change"),
+  input: action("input"),
+  focus: action("focus"),
+};
 
 const reusableOptions = [
-	{
-		name: "Armstrong-Siddeley",
-		value: "Armstrong-Siddeley",
-	},
-	{
-		name: "Jaguar Mark II",
-		value: "Jaguar Mark II",
-	},
-	{
-		name: "Ford Zephyr",
-		value: "Ford Zephyr",
-	},
+  {
+    name: "frequency",
+    value: "daily",
+    label: "Daily",
+  },
+  {
+    name: "frequency",
+    value: "weekly",
+    label: "Weekly",
+  },
+  {
+    name: "frequency",
+    value: "monthly",
+    label: "Monthly",
+  },
 ];
 
-function onChange(event) {
-	let selected = event.currentTarget.value;
-}
-
 export default {
-	title: "Cobalt UI Library/Basic Components/RadioButton",
-	component: {RadioButton},
-}
+  title: "Cobalt UI Library/New Components/RadioButton",
+  component: RadioButton,
+};
 
 const Template = ({ ...args }) => ({
   Component: RadioButton,
   props: args,
+  on: {
+    ...actionsData,
+  },
 });
 
-export const Default = Template.bind({});
-
-Default.args = {
+export const Radio = Template.bind({});
+Radio.args = {
+  id: "r1",
+  type: "radio",
   options: reusableOptions,
-	onChange: onchange,
+  legendLabel: "Radio legend",
 };
