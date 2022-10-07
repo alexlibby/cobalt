@@ -17,7 +17,7 @@
     <img {src} class="avatar-img" alt="avatar" />
   {/if}
   <slot />
-  <span class={statusClasses()} />
+  <span class={["base", statusClasses()].join(" ")} />
 </div>
 
 <style>
@@ -27,30 +27,37 @@
     align-items: center;
     justify-content: center;
     vertical-align: middle;
-    border-radius: 50rem;
-    width: 2rem;
-    height: 2rem;
+    border-radius: 800px;
+    width: 32px;
+    height: 32px;
     font-size: 0.8rem;
   }
 
-  .small {
-    border-radius: 50rem;
-    width: 8px;
-    height: 8px;
+  .base {
+    border-radius: 800px;
     position: absolute;
-    top: 25px;
-    right: 0px;
     border: 1px solid #373737;
   }
 
+  .small {
+    width: 8px;
+    height: 8px;
+    top: 25px;
+    right: 0px;
+  }
+
   .medium {
-    border-radius: 50rem;
     width: 12px;
     height: 12px;
-    position: absolute;
     top: 22px;
     right: -4px;
-    border: 1px solid #373737;
+  }
+
+  .large {
+    width: 16px;
+    height: 16px;
+    top: 22px;
+    right: -4px;
   }
 
   .available {
@@ -67,7 +74,6 @@
 
   .unavailable {
     background-color: #ffffff;
-    border: 1px solid #000000;
   }
 
   .avatar-img {

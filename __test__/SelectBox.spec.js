@@ -21,8 +21,7 @@ describe("Tests for SelectBox", () => {
   it("should select the second option if clicked", () => {
     const result = render(SelectBox, props );
     const selectedText = userEvent.selectOptions(screen.getAllByTestId("selectdropdown")[1], ["text"]);
-    console.log("EARRINGS", selectedText);
-    //expect(selectedText).toContain("bbb");
+    expect(selectedText).toContain("bbb");
   });
 
   it("get a snapshot of component", () => {

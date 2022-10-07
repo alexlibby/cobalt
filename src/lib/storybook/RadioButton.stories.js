@@ -40,8 +40,8 @@ const Template = ({ ...args }) => ({
   },
 });
 
-export const Radio = Template.bind({});
-Radio.args = {
+export const Default = Template.bind({});
+Default.args = {
   id: "r1",
   type: "radio",
   options: reusableOptions,
